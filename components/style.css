@@ -1,0 +1,70 @@
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+    transform: translateY(150px) scale(0.3);
+    
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    
+  }
+}
+
+.autoshow {
+  animation: fadeIn both;
+  animation-timeline: view(70% 5%);
+}
+
+@keyframes aboutIn {
+  from{
+    opacity: 0;
+    transform: translateX(250px) scale(0.3);
+    
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    
+  }
+}
+
+.aboutshow {
+  animation: aboutIn both;
+  animation-timeline: view(70% 5%);
+}
+
+@keyframes contactIn {
+  from{
+    opacity: 0;
+    transform: translateX(300px) scale(0.3);
+    
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    
+  }
+}
+@keyframes contactInOut {
+  from{
+    opacity: 0;
+    transform: translateX(-300px) scale(0.3);
+    
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    
+  }
+}
+.contactin {
+  animation: contactIn both;
+  animation-timeline: view(70% 5%);
+  animation-duration: 200ms;
+}
+.contactout {
+  animation: contactInOut both;
+  animation-timeline: view(70% 5%);
+  animation-duration: 200ms;
+}
